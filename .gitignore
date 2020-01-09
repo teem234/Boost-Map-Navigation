@@ -7,6 +7,9 @@
 
 # idea
 .idea/*
-.aiproj*
+
 #debugcmake
 
+
+#zips
+*.zip
