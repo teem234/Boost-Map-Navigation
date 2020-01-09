@@ -1,0 +1,14 @@
+Created by Timothy Joyce
+
+makefile included, requires CImg.h and c++ Boost Graphing Libraries
+
+Using pathfinding algorithms to determine the path an AI would take to traverse a given map from given input
+coordinates to given output coordinates. The paths taken are then drawn as overlays on an image.
+
+This project uses an image jpg file and a map file in conjuction. The .map file contains characters that conform with
+the coordinates on the jpg image of the map. Sections of the map including the purple, dark green, and blue are non traversable while
+the other sections are.
+
+This program converts the map file into a boost Graph, and each node knows which of the neighbors are able to be entered. 
+After the graph is created inside the program, shortest path algorithms from given coordinates(such as dijkstras and AStar) are
+run and their path is then drawn over the jpg image using the CImg library.
